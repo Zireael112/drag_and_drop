@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(84, 84, 216);
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    width: 33%;
+    height: 98%;
+    background-color: white;
+}
+
+.columns {
+    width: 2000px;
+    height: 1430px;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.column {
+    margin: 0 15px;
+    background-color: rgb(237, 235, 235);
+    position: relative;
+    border-radius: 10px;
+
+}
+
+.column:nth-child(2) {
+    margin-left: 0;
+}
+
+.column:nth-child(3) {
+    margin-left: 0;
+}
+
+.column-title {
+    height: 5%;
+    width: 100%;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.fotter {
+    height: 5%;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 0;
+    color: gray;
+    display: flex;
+}
+
+.add-card {
+    color: gray;
+    text-decoration: none;
+}
+
+.fotter:hover .add-card{
+    text-decoration: underline;
+}
+
+.fotter:hover {
+    cursor: pointer;
+}
+
+.plus {
+    padding-right: 5px;
+}
+
+.inputDisplay {
+    height: 5%;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 70px;
+    color: gray;
+    display: none;
+}
+
+.btnDisplay {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.inp-card {
+    margin-bottom: 10px;
+}
+
+.cross:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: inline;
+}
+
+.card-content {
+    margin: 5px;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    font-size: 25px;
+    position: relative;
+    word-wrap: break-word;
+    z-index: 1000;
+}
+
+.card-content:hover .cross-content{
+    display: inline !important;
+}
+
+.cross-content:hover {
+    cursor: pointer;
+}
+
+.cross-content {
+    position: absolute;
+    right: 0;
+    margin-right: 5px; 
+}
+
+.dragged {
+    position: absolute;
+}
